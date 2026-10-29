@@ -1,0 +1,23 @@
+{
+  "name": "ai-mystery-room",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI Mystery Room — Interactive AI-powered mystery investigation game",
+  "scripts": {
+    "install:shared": "npm --prefix packages/shared install",
+    "install:api": "npm --prefix apps/api install",
+    "install:web": "npm --prefix apps/web install",
+    "install:all": "npm run install:shared && npm run install:api && npm run install:web",
+    "build:shared": "npm --prefix packages/shared run build",
+    "build:api": "npm --prefix apps/api run build",
+    "build:web": "npm --prefix apps/web run build",
+    "build": "npm run build:shared && npm run build:api && npm run build:web",
+    "dev:api": "npm --prefix apps/api run dev",
+    "dev:web": "npm --prefix apps/web run dev",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "test": "npm --prefix apps/api run test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

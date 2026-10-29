@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="spotlight" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#090d16"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#spotlight)"/>
+
+  <!-- Tiled crime floor perspective -->
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#334155" stroke-width="1.5"/>
+  <line x1="150" y1="500" x2="280" y2="420" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="650" y1="500" x2="520" y2="420" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Pedestal -->
+  <polygon points="320,420 480,420 490,470 310,470" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <rect x="335" y="240" width="130" height="180" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <rect x="330" y="220" width="140" height="20" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+
+  <!-- Empty display mount -->
+  <rect x="375" y="200" width="50" height="20" rx="3" fill="#020617" stroke="#cbd5e1" stroke-width="1"/>
+  <ellipse cx="400" cy="200" rx="16" ry="6" fill="#1e293b" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Dropped black tactical glove on floor -->
+  <path d="M240,430 C230,425 210,435 215,445 C220,455 245,455 255,445 C265,435 250,425 240,430 Z" fill="#0a0a0f" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="228" y="443" fill="#f59e0b" font-family="monospace" font-size="8" font-weight="bold">A.P.</text>
+
+  <!-- Police Evidence Marker #1 (near glove) -->
+  <polygon points="180,455 195,430 210,455" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="191" y="451" fill="#713f12" font-family="monospace" font-size="12" font-weight="bold">1</text>
+
+  <!-- Police Evidence Marker #2 (near lock mechanism) -->
+  <polygon points="495,240 510,215 525,240" fill="#facc15" stroke="#ca8a04" stroke-width="1.5"/>
+  <text x="506" y="236" fill="#713f12" font-family="monospace" font-size="12" font-weight="bold">2</text>
+
+  <!-- Evidence tags and crosshairs -->
+  <circle cx="235" cy="440" r="24" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <line x1="260" y1="440" x2="310" y2="440" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="310" y="428" width="160" height="24" rx="4" fill="#1e1e24" stroke="#ef4444" stroke-width="1"/>
+  <text x="318" y="444" fill="#fca5a5" font-family="monospace" font-size="10">GLOVE (INITIALS A.P.)</text>
+
+  <!-- Forensic Watermark -->
+  <text x="25" y="40" fill="#94a3b8" font-family="monospace" font-size="14" font-weight="bold">FORENSIC IMAGING UNIT — CRIME SCENE #2026-X89</text>
+  <text x="25" y="65" fill="#64748b" font-family="monospace" font-size="12">LOCATION: VAULT STUDY // PEDESTAL #01 (DISPLAY CLEARED)</text>
+  <text x="650" y="475" fill="#ef4444" font-family="monospace" font-size="12" font-weight="bold">[EVIDENCE CLASS A]</text>
+</svg>
